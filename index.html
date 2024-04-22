@@ -26,6 +26,15 @@
       height: 100%;
     }
   </style>
+  <script>
+    document.addEventListener("keydown", function(event) {
+        // If F12 key is pressed
+        if (event.keyCode == 123) {
+            // Prevent default action (opening developer tools)
+            event.preventDefault();
+        }
+    });
+</script>
 </head>
 <body>
 <div class="container">
@@ -129,13 +138,6 @@ return false;
 }
 });
 //]]>
-  document.addEventListener("keydown", function(event) {
-  // If F12 key is pressed
-  if (event.keyCode == 123) {
-    // Prevent default action (opening developer tools)
-    event.preventDefault();
-  }
-});
 </script>
 </body>
 </html>
